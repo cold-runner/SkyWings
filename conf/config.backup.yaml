@@ -1,0 +1,28 @@
+app: SkyWings
+mode: "release"
+port: 7597
+
+log:
+  level: "debug"
+  filename: "./log/skywings.log"
+  max_size: 1000
+  max_age: 3600
+  max_backups: 5
+
+mysql:
+  host:
+  port: 3306
+  user:
+  password:
+  db:
+  max_open_conns: 100
+  max_idle_conns: 20
+  photoPath: ./dao/photos/
+redis:
+  host:
+  port:
+  db: 0
+  password:
+
+jwt:
+  secret:
